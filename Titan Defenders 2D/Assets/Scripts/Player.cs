@@ -7,14 +7,14 @@ public class Player : MonoBehaviour
 {
     Rigidbody2D player;
     Vector2 direction;
-    public float speed,fireRate;
-    public GameObject bullet, bulletSpawner;
+    public float speed;
+    
     private float timer;
 
     public int maxHealth = 100;
     public int currentHealth;
 
-    public healthbar healthBar;
+    public HealthBar healthBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +28,6 @@ public class Player : MonoBehaviour
     {
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         player.MovePosition(player.position + direction * speed * Time.deltaTime);
-
-        //Check if the "Fire1" button is pressed
-        if(Input.GetAxis("Fire1") > 0 && timer > fireRate)
-        {
-            Instantiate(bullet, bulletSpawner.transform.position, bulletSpawner.transform.rotation);
-            //reset timer
-            timer = 0;
-        }
-        timer += Time.deltaTime;
     }
 
     //implement damage by using collider with enemy//
