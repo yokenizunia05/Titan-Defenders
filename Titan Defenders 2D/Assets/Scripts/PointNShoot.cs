@@ -39,7 +39,7 @@ public class PointNShoot : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawner.transform.position, bulletPrefab.transform.rotation) as GameObject;
         bullet.transform.position = playerPosition.transform.position;
-        bullet.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+        bullet.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ -90);
         bullet.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed; 
     }
 
