@@ -58,8 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\PointNShoot.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\bulletMover.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
