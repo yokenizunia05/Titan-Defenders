@@ -7,6 +7,7 @@ public class Titan : MonoBehaviour
     public float speed;
     private Transform playerPosition;
     public GameObject titanCrawler;
+    public int crawlerHealth;
    
     void Start()
     {
@@ -27,7 +28,11 @@ public class Titan : MonoBehaviour
     {
         if(collision.gameObject.tag == "Bullet")
         {
-            Destroy(this.gameObject);
+            crawlerHealth--;
+            if (crawlerHealth <= 0)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }

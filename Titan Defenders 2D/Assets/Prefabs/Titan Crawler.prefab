@@ -156,3 +156,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   titanCrawler: {fileID: 3926507503048829938}
+  crawlerHealth: 3
