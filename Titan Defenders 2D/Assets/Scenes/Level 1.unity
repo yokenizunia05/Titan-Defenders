@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbfbfba8f44174c4b986d1583889cac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 10
   maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 1239328261}
