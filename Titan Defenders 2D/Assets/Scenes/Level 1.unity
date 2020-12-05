@@ -935,7 +935,7 @@ RectTransform:
   m_Children:
   - {fileID: 881612230}
   m_Father: {fileID: 1186074886}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1322,7 +1322,6 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 1677824832}
-  - {fileID: 1774210060}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1385,7 +1384,7 @@ RectTransform:
   - {fileID: 1248038807}
   - {fileID: 1592337368}
   m_Father: {fileID: 1186074886}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1673,6 +1672,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1774210060}
   - {fileID: 1012602790}
   - {fileID: 697268388}
   m_Father: {fileID: 0}
@@ -2934,7 +2934,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 894213101}
+    m_TransformParent: {fileID: 1186074886}
     m_Modifications:
     - target: {fileID: 5842744613689171252, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2974,7 +2974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2990,11 +2990,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -153
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.9
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3002,23 +3002,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 237.9009
+      value: 237.90088
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_Pivot.x
@@ -3028,9 +3028,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842744614305629569, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 5842744614305629573, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: m_Name
       value: HealthBar Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842744614305629575, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5842744614844198792, guid: 22f8dc7932a91b549a0b5b42c9626354, type: 3}
       propertyPath: slider

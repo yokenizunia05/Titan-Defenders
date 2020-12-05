@@ -31,7 +31,13 @@ public class Player : MonoBehaviour
     }
 
     //implement damage by using collider with enemy//
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            takeDamage(12);
+        }
+    }
 
     void takeDamage(int damage)
     {

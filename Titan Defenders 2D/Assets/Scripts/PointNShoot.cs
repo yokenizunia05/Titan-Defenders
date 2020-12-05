@@ -43,5 +43,6 @@ public class PointNShoot : MonoBehaviour
         bullet.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ -90);
         bullet.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed; 
     }
+    
 
 }
