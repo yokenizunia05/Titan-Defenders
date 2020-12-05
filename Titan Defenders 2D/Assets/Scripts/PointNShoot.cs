@@ -6,7 +6,8 @@ public class PointNShoot : MonoBehaviour
 {
     public GameObject playerPosition;
     public GameObject reticle;
-    public GameObject bulletPrefab, bulletSpawner;
+    public GameObject bulletPrefab;
+    public Transform bulletSpawner;
     public float bulletSpeed = 60f;
     private Vector3 mouseLoc;
     

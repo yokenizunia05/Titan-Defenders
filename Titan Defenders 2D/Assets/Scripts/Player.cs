@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     }
 
     //implement damage by using collider with enemy//
+    
 
     void takeDamage(int damage)
     {
