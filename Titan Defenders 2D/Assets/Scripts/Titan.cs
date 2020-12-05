@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Titan : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Titan : MonoBehaviour
     private Transform playerPosition;
     public GameObject titanCrawler;
     public int crawlerHealth;
+    public Text scoreText;
+    int increment;
    
     void Start()
     {
@@ -32,7 +35,10 @@ public class Titan : MonoBehaviour
             if (crawlerHealth <= 0)
             {
                 Destroy(this.gameObject);
+                increment += 10;
             }
+            
+            scoreText.text = increment.ToString();
         }
     }
 }
